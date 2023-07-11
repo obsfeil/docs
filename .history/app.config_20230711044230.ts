@@ -1,7 +1,8 @@
-// eslint-disable @typescript-eslint/no-unused-vars 
+
 
 export default defineAppConfig({
 
+  
   docus: {
     title: 'Docus',
     description: 'The best place to start your documentation.',
@@ -39,8 +40,3 @@ export default defineAppConfig({
     }
   }
 })
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function defineAppConfig(arg0: { docus: { title: string; description: string; image: string; socials: { twitter: string; github: string; nuxt: { label: string; icon: string; href: string; }; }; github: { dir: string; branch: string; repo: string; owner: string; edit: boolean; }; aside: { level: number; collapsed: boolean; exclude: undefined[]; }; main: { padded: boolean; fluid: boolean; }; header: { logo: boolean; showLinkIcon: boolean; exclude: undefined[]; fluid: boolean; }; }; }) {
-throw new Error("Function not implemented.");
-}
