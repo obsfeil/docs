@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from '.nuxt/config'
+import { defineNuxtConfig } from './no../nuxt/config'
 
 
 export default defineNuxtConfig({

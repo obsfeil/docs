@@ -1,5 +1,4 @@
-import { defineNuxtConfig } from '.nuxt/config'
-
+import { defineNuxtConfig } from './nuxt/config'
 
 export default defineNuxtConfig({
   // https://github.com/nuxt-themes/docus

@@ -1,10 +1,6 @@
 
 
 export default defineAppConfig({
-  "types": [
-    // ... other types
-    "jest"
-  ],
   docus: {
     title: 'Docus',
     description: 'The best place to start your documentation.',
