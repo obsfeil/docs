@@ -1,41 +1,55 @@
-// eslint-disable @typescript-eslint/no-unused-vars 
-
 export default defineAppConfig({
-
   docus: {
     title: 'Docus',
-    description: 'The best place to start your documentation.',
-    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',
+    description: 'My Docus Project',
+    url: 'http://docus.dev',
+    image: '/social-card-preview.png',
     socials: {
-      twitter: 'nuxt_js',
+      twitter: '@nuxt_js',
       github: 'nuxt-themes/docus',
-      nuxt: {
-        label: 'Nuxt',
-        icon: 'simple-icons:nuxtdotjs',
-        href: 'https://nuxt.com'
-      }
     },
     github: {
-      dir: '.starters/default/content',
-      branch: 'main',
-      repo: 'docus',
-      owner: 'nuxt-themes',
-      edit: true
+      root: 'content',
+      edit: true,
+      contributors: false
     },
+    layout: 'default',
     aside: {
-      level: 0,
-      collapsed: false,
-      exclude: []
-    },
-    main: {
-      padded: true,
-      fluid: true
+      level: 1,
+      filter: [],
     },
     header: {
+      title: false,
       logo: true,
-      showLinkIcon: true,
-      exclude: [],
-      fluid: true
+      showLinkIcon: false
+    },
+    footer: {
+      credits: {
+        icon: 'IconDocus',
+        text: 'Powered by Docus',
+        href: 'https://docus.dev',
+      },
+      textLinks: [
+        {
+          text: 'Nuxt',
+          href: 'https://nuxt.com',
+          target: '_blank',
+          rel: 'noopener'
+        }
+      ],
+      iconLinks: [
+        {
+          label: 'NuxtJS',
+          href: 'https://nuxtjs.org',
+          component: 'IconNuxtLabs',
+        },
+        {
+          label: 'Vue Telescope',
+          href: 'https://vuetelescope.com',
+          component: 'IconVueTelescope',
+        },
+      ],
     }
   }
 })
+
