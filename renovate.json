@@ -3,6 +3,6 @@
       "@nuxtjs"
     ],
     "lockFileMaintenance": {
-      "enabled": false
+      "enabled": true
     }
 }
