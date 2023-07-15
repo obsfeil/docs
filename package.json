@@ -10,16 +10,16 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt-themes/docus": "^1.13.1",
+    "@nuxt-themes/docus": "^1.14.3",
     "@nuxt/devtools": "^0.6.7",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/plausible": "^0.2.1",
     "@types/jest": "^29.5.3",
-    "@types/node": "^20.4.1",
-    "eslint": "^8.44.0",
+    "@types/node": "^20.4.2",
+    "eslint": "^8.45.0",
     "eslint-plugin-vue": "^9.15.1",
     "jest": "^29.6.1",
-    "nuxt": "^3.6.2"
+    "nuxt": "^3.6.3"
   },
   "dependencies": {
     "@typescript-eslint/types": "^6.0.0",
