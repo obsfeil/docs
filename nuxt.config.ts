@@ -1,16 +1,40 @@
-import { defineNuxtConfig } from 'nuxt/config'
-
-
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // https://github.com/nuxt-themes/docus
-  extends: '@nuxt-themes/docus',
-
+  extends: ['@nuxt/ui-pro'],
   modules: [
-    // https://github.com/nuxt-modules/plausible
-    '@nuxtjs/plausible',
-    // https://github.com/nuxt/devtools
-    '@nuxt/devtools'
-  ]
+    '@nuxt/content',
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@nuxt/fonts',
+    '@nuxthq/studio',
+    'nuxt-og-image'
+  ],
+  hooks: {
+    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
+    'components:extend': (components) => {
+      const globals = components.filter(c => ['UButton', 'UIcon'].includes(c.pascalName))
+
+      globals.forEach(c => c.global = true)
+    }
+  },
+  ui: {
+    icons: ['heroicons', 'simple-icons']
+  },
+  routeRules: {
+    '/api/search.json': { prerender: true }
+  },
+  devtools: {
+    enabled: true
+  },
+  typescript: {
+    strict: false
+  },
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  }
 })
-
-
